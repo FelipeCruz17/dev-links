@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import * as Switch from '@radix-ui/react-switch'
 
 export const HomeContainer = styled.div`
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0;
   padding: 0 24px;
   text-align: center;
@@ -42,7 +43,7 @@ export const SwitchThumb = styled(Switch.Thumb)`
   will-change: transform;
 
   &:hover {
-    box-shadow: 0 0 50px ${(props) => props.theme.colors.strokeColor};
+    outline: 8px solid ${(props) => props.theme.colors.highLightColor};
   }
 
   &[data-state='checked'] {
