@@ -11,6 +11,7 @@ export default {
 
   background: {
     backgroundImage: 'url(/bg-mobile-dark.jpg)',
+    backgroundImageDesktop: 'url(/bg-desktop-dark.jpg)',
     backgroundSvg: 'url(/moon-stars.svg)',
   },
 }
