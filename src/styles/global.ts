@@ -10,8 +10,9 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: ${(props) =>
       props.theme.background.backgroundImage} no-repeat top center /cover;
+    color: ${(props) => props.theme.colors.textColor};
     -webkit-font-smoothing: antialiased;
-    color: ${(props) => props.theme.colors.textColor}
+    height: 100vh;
   }
 
   body, input, textarea, button {
@@ -29,5 +30,14 @@ export const GlobalStyle = createGlobalStyle`
 
   button {
     all: unset;
+  }
+
+  @media(min-width: 700px) {
+    body {
+      background: ${(props) => props.theme.background.backgroundImageDesktop};
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
   }
 `
